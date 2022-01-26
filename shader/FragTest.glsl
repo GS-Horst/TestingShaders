@@ -1,7 +1,8 @@
-#version 460
-precision mediump float;
+#version 330
+//precision mediump float;
 
 uniform float u_time;
+out vec4 fragColor;
 
 void main() {
 
