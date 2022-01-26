@@ -55,7 +55,7 @@ def draw():
 
     texture_data = schirm.get_view('1')
     screen_texture.write(texture_data)
-    ctx.clear(14/255,40/255/66/255)
+    ctx.clear(14/255,40/255,66/255)
     screen_texture.use()
     vao.render()
 
