@@ -30,8 +30,8 @@ def draw():
     render_indices = [0, 1, 2, 1, 2, 3]
 
     prog = ctx.program(
-        vertex_shader = open("C:/Users/TK-DESKTOP/Desktop/shared/bunner-master/shader/VertexShader.glsl").read(),
-        fragment_shader = open("C:/Users/TK-DESKTOP/Desktop/shared/bunner-master/shader/FragTest.glsl").read())
+        vertex_shader = open("shader/VertexShader.glsl").read(),
+        fragment_shader = open("shader/FragTest.glsl").read())
 
     screen_texture = ctx.texture(
         VIRTUAL_RES, 3,
