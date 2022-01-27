@@ -3,10 +3,12 @@ import pgzero, pgzrun
 import struct
 import moderngl
 from pygame.locals import *
+import time
 
 WIDTH = 300
 HEIGHT = 300
 
+start = time.time()
 ########### GAME LOGIC ###############
 alien = Actor('alien')
 alien.topright = 0, 10
@@ -60,7 +62,9 @@ def draw():
     vao.render()
 
     ###########
-    prog["u_time"] = 3.3
+    end = time.time()
+    diff = end - start
+    prog["u_time"] = diff
     ###########
 
 
